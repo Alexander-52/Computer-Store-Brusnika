@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация - Брусника</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Основные стили для всей страницы */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Контейнер для страницы */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="brusnika">
+                <h1>Брусника</h1>
+                <img src="assets/images/брусника.png" alt="логотип" width="10%"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="C:\введение в ит 2\Index.html">Главная</a></li>
+                    <li><a href="C:\введение в ит 2\contact.html">Контакты</a></li>
+                    <li><a href="C:\введение в ит 2\avtor.html">Авторизация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="login-container">
+            <h2>Авторизация</h2>
+            <form id="login-form" action="login.php" method="POST">
+                <div id="error-message" class="error-message"></div>
+
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required placeholder="Введите логин" />
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Введите пароль" />
+
+                <button type="submit">Войти</button>
+            </form>
+            <a href="registr.html">Ещё не зарегестрированы?</a>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Брусника. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/avtor.js">
+    </script>
+</body>
+</html>
